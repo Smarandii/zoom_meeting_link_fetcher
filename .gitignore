@@ -2,4 +2,3 @@ Venv/
 .idea/
 __pycache__/
 .git/
-config.py
