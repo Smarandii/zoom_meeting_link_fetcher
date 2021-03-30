@@ -2,3 +2,4 @@ Venv/
 .idea/
 __pycache__/
 .git/
+.gitignore

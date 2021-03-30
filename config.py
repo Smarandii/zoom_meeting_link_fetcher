@@ -1,2 +1,2 @@
-api_token = "your api token"
-group_di = "your group id"
+api_token = '77777dde7eee9ad046847317c608449206c5282e71d444fa85cc06e4ee85380347adf90a122645b4740da'
+group_id = '199816715'
