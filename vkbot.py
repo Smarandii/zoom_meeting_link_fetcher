@@ -4,7 +4,8 @@ from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from urls import Urls
 from stankin_classes_alias import Classes
 import time
-
+import sports_url
+ 
 class Bot:
     def __init__(self, group_id, token):
         self.group_id = group_id
