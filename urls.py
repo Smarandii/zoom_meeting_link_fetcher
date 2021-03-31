@@ -1,7 +1,6 @@
-from enum import Enum
 import sports_url
 
-class Urls(Enum):
+class Urls():
     physics_url = "https://edu.stankin.ru/mod/forum/discuss.php?d=37245"
     sports_url = sports_url.get_url()
     probability_theory_url = "https://us04web.zoom.us/postattendee?id=3"

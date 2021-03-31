@@ -15,12 +15,12 @@ class Bot:
         self.long_poller = VkBotLongPoll(self.vk, group_id=self.group_id)
         self.time_stamp = time.time()
 
-    def _send(self, url: Urls, event):
+    def _send(self, url, event):
         try:
             self.api.messages.send(message="ща скину...",
                                    random_id=event.object.random_id,
                                    peer_id=event.object.peer_id)
-            self.api.messages.send(message=url.value,
+            self.api.messages.send(message=url,
                                    random_id=event.object.random_id,
                                    peer_id=event.object.peer_id)
         except Exception:
@@ -30,7 +30,7 @@ class Bot:
 
     def _update_sports_url(self):
         if (time.time() - self.time_stamp) / 1800 >= 1:
-            Urls.sports_url.value = sports_url.get_url()
+            Urls.sports_url = sports_url.get_url()
             print(f"sports link had been updated: {Urls.sports_url.value}")
             
 
