@@ -60,8 +60,8 @@ class Bot:
         self._send(Urls.mo_url, event)
 
     def _on_event(self, event):
-        cmd = event.object.text.lower()
         if event.type == VkBotEventType.MESSAGE_NEW:
+            cmd = event.object.text.lower()
             if Classes.sports.value in cmd:
                 self.send_sports_url(event)
             if Classes.physics.value in cmd:
