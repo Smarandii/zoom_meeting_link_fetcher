@@ -31,7 +31,8 @@ class Bot:
     def _update_sports_url(self):
         if (time.time() - self.time_stamp) / 1800 >= 1:
             Urls.sports_url = sports_url.get_url()
-            print(f"sports link had been updated: {Urls.sports_url.value}")
+            self.time_stamp = time.time()
+            print(f"sports link had been updated: {Urls.sports_url}")
             
 
     def send_sports_url(self, event):
