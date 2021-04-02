@@ -1,5 +1,6 @@
-Venv/
+venv/
 .idea/
 __pycache__/
 .git/
 .gitignore
+config.py
