@@ -11,8 +11,8 @@ def get_logintoken(login_url, session_requests):
 
 
 def login(session_requests):
-    payload = {"username": "st119181",
-               "password": "St000QsYss%",
+    payload = {"username": "",
+               "password": "",
                "logintoken": "rE4k5W4LgoOMKR7jJUFuQzQD1dJ4s18g"}
     login_url = "https://edu.stankin.ru/login/"
     payload['logintoken'] = get_logintoken(login_url, session_requests)
