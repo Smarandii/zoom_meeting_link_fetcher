@@ -6,7 +6,7 @@ class Classes(Enum):
     sports = "физра"
     oop = "ооп"
     elteh = "элтех"
-    probability_theory = "теорвер"
+    probability_theory = ["теорвер", "тервер"]
     calc_math = "вычмат"
     hmi = "чмв"
     mo = "мо"

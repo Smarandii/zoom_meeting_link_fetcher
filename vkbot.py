@@ -62,11 +62,12 @@ class Bot:
     def _on_event(self, event):
         if event.type == VkBotEventType.MESSAGE_NEW:
             cmd = event.object.text.lower()
+            cmd = cmd.strip()
             if Classes.sports.value in cmd:
                 self.send_sports_url(event)
             if Classes.physics.value in cmd:
                 self.send_physics_url(event)
-            if Classes.probability_theory.value in cmd:
+            if cmd in Classes.probability_theory.value:
                 self.send_probability_theory_url(event)
             if Classes.elteh.value in cmd:
                 self.send_elteh_url(event)
