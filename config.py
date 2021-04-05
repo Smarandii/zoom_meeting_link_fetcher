@@ -1,2 +1,2 @@
-api_token = 'b4dfdd45d55e477d0fcb9337dd7c4c71659b3139d3723c5e7da18d302feffa8489b8bcb12b324eab2e9ae'
-group_id = '199816715'
+api_token = ''
+group_id = ''
