@@ -1,7 +1,5 @@
 # stankin-bot
 
 ### This bot is for better edu.stankin.ru exp
-
-https://vk.com/stankin_bot
-
-### Currently not hosted on a server!
+## Currently not hosted on a server!
+# Was used on quarantine to fetch zoom meeting urls from edu.stankin.ru and send to vk group chat
